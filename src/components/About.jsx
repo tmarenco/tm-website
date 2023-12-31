@@ -1,7 +1,5 @@
 export const About = () => {
 
-    // const calculateAge = () => Math.floor((new Date() - new Date('1996-02-07')) / (365.25 * 24 * 60 * 60 * 1000));
-
     return (
     <>
         <section id='about' className="d-flex align-items-center justify-content-center min-vh-100 sect">

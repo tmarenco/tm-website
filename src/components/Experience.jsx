@@ -92,9 +92,6 @@ export const Experience = () => {
                     <div className="col-6 align-self-center">
                       <h1>{ activeJob.companyName }</h1>
                     </div>
-                    {/* <div className="col-6 text-end">
-                      <img src={ activeJob.logo } alt={ activeJob.companyName } className="w-25" />
-                    </div> */}
                     <div className="col-6 text-end">
                       <div className="row">
                         <div className="col-12 col-lg-6 order-lg-2">

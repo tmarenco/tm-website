@@ -4,13 +4,18 @@ import { Link } from 'react-scroll';
 
 export const Navbar = () => {
 
+    const openPdfInNewTab = () => {
+        const pdfPath = '/public/Resume - Tomás Marenco.pdf';
+        window.open(pdfPath, '_blank');
+      };
+
 
     return (
         <>
             <nav className="navbar navbar-expand-md bg-body-tertiary fixed-top px-2">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="home">
                     <img src="/blackLogo.png" alt="Logo" width="50" height="40" className="d-inline-block align-text-top" />
-                </a>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -31,7 +36,13 @@ export const Navbar = () => {
                         </ul>
                         <hr />
                         <div className="text-center">
-                            <button className="btn-send" data-bs-dismiss="offcanvas">RESUME</button>
+                            <button 
+                                className="btn-send"
+                                data-bs-dismiss="offcanvas"
+                                onClick={ openPdfInNewTab }
+                            >
+                                RESUME
+                            </button>
                         </div>
                     </div>
                 </div>

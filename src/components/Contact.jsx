@@ -12,7 +12,7 @@ export const Contact = () => {
     const form = useRef();
     const [isLoading, setIsLoading] = useState(false)
 
-    const { register, handleSubmit, formState: { errors, isValid }, reset } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
     const sendEmail = () => {
         setIsLoading(true)
@@ -69,8 +69,6 @@ export const Contact = () => {
                                         <button 
                                             type="submit" 
                                             className='btn-send'
-                                            // className={`btn-send ${isValid ? '' : 'bg-secondary'}`}
-                                            // disabled={ !isValid }
                                         >
                                             SEND
                                         </button>

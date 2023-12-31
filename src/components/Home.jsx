@@ -1,40 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
 
-const occupation = ['Software Developer', 1500, 'Front-End Explorer', 1500, 'Back-End Learner', 1500, 'Tech Curious', 1500, 'Agile Learner', 1500]
+const occupation = ['Software Developer', 1500, 'Front-End Explorer', 1500, 'Back-End Learner', 1500, 'Tech Curious', 1500, 'Agile Learner', 1500];
+
+const openPdfInNewTab = () => {
+  const pdfPath = '/public/Resume - Tomás Marenco.pdf';
+  window.open(pdfPath, '_blank');
+};
 
 
 export const Home = () => {
   return (
     <>
-      {/* <section className="d-flex align-items-center justify-content-center mt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-md-3 align-self-center text-center text-md-start">
-              <h3>Welcome! I am</h3>
-              <h1>{name}</h1>
-              <TypeAnimation
-                    sequence={occupation}
-                    speed={10}
-                    wrapper="h2"
-              />
-            </div>
-            <div className="col-12 col-md-3 align-self-center text-center text-md-start animate__animated animate__backInRight">
-              <img src="/whiteLogoNoSpaces.png" alt="" className="w-75" />
-            </div>
-            <div className="col-12 col-md-6 code mt-5 mt-md-0">
-              <div className="m-4">
-                <p>1 const <strong className="text-info">myInfo</strong> = {'{' }</p>
-                <p><span>2 <span className="ms-5">{'name: "Tomás Marenco"' }</span></span></p>
-                <p><span>3 <span className="ms-5">{'occupation: "Software Developer"' }</span></span></p>
-                <p><span>4 <span className="ms-5">{'age: 27'}</span></span></p>
-                <p><span>5 <span className="ms-5">{'nacionality: "Argentina"'}</span></span></p>
-                <p>6 {'}' }</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section> */}
       <section id='home' className="d-flex align-items-center justify-content-center min-vh-100 mt-5">
         <div className="w-75">
           <div className="row mb-3">
@@ -47,7 +23,12 @@ export const Home = () => {
                     repeat={Infinity}
               />
               <p className="opacity-75">Welcome! Here you will find my skills showcased, my story shared, and my experience unveiled. Connect with me through the form below. Excited to engage with you!</p>
-              <button className="btn-send">RESUME</button>
+              <button 
+                className="btn-send"
+                onClick={ openPdfInNewTab }
+              >
+                RESUME
+              </button>
             </div>
             <div className="col-12 col-md-6 align-self-center text-center mt-5 mt-lg-0 animate__animated animate__backInRight">
               <img src="/whiteLogoNoSpaces.png" alt="" className="w-50 home-logo" />
