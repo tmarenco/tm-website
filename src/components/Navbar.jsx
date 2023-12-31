@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 export const Navbar = () => {
 
     const openPdfInNewTab = () => {
-        const pdfPath = '/public/Resume - Tomás Marenco.pdf';
+        const pdfPath = '/resume.pdf';
         window.open(pdfPath, '_blank');
       };
 

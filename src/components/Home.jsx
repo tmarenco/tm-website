@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 const occupation = ['Software Developer', 1500, 'Front-End Explorer', 1500, 'Back-End Learner', 1500, 'Tech Curious', 1500, 'Agile Learner', 1500];
 
 const openPdfInNewTab = () => {
-  const pdfPath = '/public/Resume - Tomás Marenco.pdf';
+  const pdfPath = '/resume.pdf';
   window.open(pdfPath, '_blank');
 };
 
