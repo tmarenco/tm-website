@@ -18,7 +18,7 @@ export const About = () => {
                                 From my first role at &quot;Gen IT&quot; in October 2021, I&apos;ve embraced every coding challenge with a passion for continuous improvement. Beyond my work, I dedicate myself to hands-on practice and online courses, always seeking to refine my skills and expand my knowledge.
                             </p>
                             <p>
-                                English, while not my native language, is another skill I&apos;m actively enhancing. Completing the CAE course has equipped me to navigate comfortably and communicate effectively.
+                                English, while not my native language, is another skill I&apos;m actively enhancing. Achieving proficiency at the C1 level in the Cambridge English: Advanced (CAE) certification has equipped me to navigate comfortably and communicate effectively.
                             </p>
                         </div>
                     </div>

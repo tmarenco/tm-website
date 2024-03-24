@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 
-const occupation = ['Software Developer', 1500, 'Front-End Explorer', 1500, 'Back-End Learner', 1500, 'Tech Curious', 1500, 'Agile Learner', 1500];
+const occupation = ['Software Developer', 1500, 'Tech Enthusiast', 1500, 'Full-stack Developer', 1500];
 
 const openPdfInNewTab = () => {
   const pdfPath = '/resume.pdf';
@@ -32,36 +32,6 @@ export const Home = () => {
             </div>
             <div className="col-12 col-md-6 align-self-center text-center mt-5 mt-lg-0 animate__animated animate__backInRight">
               <img src="/whiteLogoNoSpaces.png" alt="" className="w-50 home-logo" />
-
-
-
-              {/* <div className="row">
-                <div className="col-12 col-xl-6 order-xl-2">
-                  <img src="/whiteLogoNoSpaces.png" alt="logo" className="img-fluid w-100" />
-                </div>
-                <div className="col-12 col-xl-6 order-xl-1">
-                  <img src="" alt="" className="img-fluid d-xl-none" />
-                </div>
-              </div> */}
-
-              {/* <div className="row">
-                <div className="col-12 col-lg-6 order-lg-2">
-                  <img src="/whiteLogoNoSpaces.png" alt="logo" className="img-fluid w-75" />
-                </div>
-                <div className="col-12 col-lg-6 order-lg-1">
-                  <img src="" alt="" className="img-fluid d-lg-none" />
-                </div>
-              </div> */}
-
-
-              
-              {/* <div className="row">
-                <div className="col-12 col-xl-6">
-                  <img src="/whiteLogoNoSpaces.png" alt="logo" className="img-fluid" />
-                </div>
-              </div> */}
-
-
             </div>
           </div>
         </div>

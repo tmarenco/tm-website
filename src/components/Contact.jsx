@@ -16,16 +16,13 @@ export const Contact = () => {
 
     const sendEmail = () => {
         setIsLoading(true)
-        console.log(errors)
         emailjs.sendForm(VITE_SERVICE_ID, VITE_TEMPLATE_ID, form.current, VITE_PUBLIC_KEY)
-            .then((result) => {
-                console.log(result);
+            .then(() => {
                 setIsLoading(false)
                 toast.success("Email sent!");
                 reset();
-            }, (error) => {
+            }, () => {
                 setIsLoading(false)
-                console.log(error);
                 toast.error("An error ocurred while sending your email, please try again");
             });
     };
@@ -34,7 +31,7 @@ export const Contact = () => {
     return (
         <>
             <section id='contact' className="d-flex align-items-center justify-content-center min-vh-100 sect">
-                <div className="w-75">
+                <div className="form-container">
                     <div className='text-center my-5'>
                         <h1 className="title">CONTACT</h1>
                         <p>Feel free to contact me!</p>
@@ -48,7 +45,7 @@ export const Contact = () => {
                                     {errors.userName && <span className='text-danger fw-bold'>Name is required</span>}
                                 </div>
                                 <div className="col-12 mt-5">
-                                    <label>Email</label>
+                                    <label className='text-underline'>Email</label>
                                     <input 
                                         type="email" 
                                         className="" 

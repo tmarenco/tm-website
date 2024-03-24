@@ -12,13 +12,6 @@ body{
 }
 
 
-/* .messi{
-  background-image: url(./fondo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
 section{
   background: rgb(15,23,42);
   background: linear-gradient(135deg, rgba(15,23,42,1) 0%, rgba(23,44,102,1) 50%, rgba(42,68,150,1) 88%);
@@ -45,25 +38,15 @@ p{
 }
 
 
-/* 
-body{
-    color: white;
-    margin: 0; 
-    overflow: hidden; 
-}
-
-.gradient-container {
-    background: radial-gradient(circle at var(--x, 0) var(--y, 0), #070a13, #0f172a);
-    position: relative;
-    min-height: 100vh;
-} */
-
-
 /* Loading */
 
 
 .loading {
-  width: 10%;
+  width: 25%;
+
+  @media (min-width: 768px) {
+    width: 10%;
+  }
 }
 
 /* Navbar */
@@ -186,7 +169,29 @@ img:hover {
   align-items: center;
 }
 
+.experience-head{
+  height: 20vh;
+}
+
+
+.pill-items{
+  place-content: center;
+
+  @media (min-width: 768px) {
+    place-content:initial;
+  }
+}
+
 /* Contact */
+
+.form-container{
+
+  width: 75%;
+
+  @media (min-width: 1280px) {
+    width: 50%;
+  }
+}
 
 
 form {
@@ -223,7 +228,7 @@ input, textarea{
   padding-left: 20px !important;
   display: block;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #f0f0f0;
   width: 100%;
   font-weight: bold;

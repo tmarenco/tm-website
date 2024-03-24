@@ -1,4 +1,4 @@
-const segments = ['Home', 'About', 'Experience', 'Skills', 'Contact'];
+const segments = ['Home', 'About', 'Experience', 'Stack', 'Contact'];
 import { Link } from 'react-scroll';
 
 

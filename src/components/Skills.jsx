@@ -8,28 +8,40 @@ const skills = [
         path: '/angular.png'
     },
     {
-        name: 'Bootstrap',
-        path: '/bootstrap.png'
-    },
-    {
-        name: 'CSS',
-        path: '/css.png'
-    },
-    {
-        name: 'HTML',
-        path: '/html.png'
-    },
-    {
-        name: 'Javascript',
-        path: '/javascript.png'
+        name: 'Next.js',
+        path: '/next.svg'
     },
     {
         name: 'Node Js',
         path: '/nodejs.png'
     },
     {
+        name: 'AdonisJS',
+        path: '/adonis.png'
+    },
+    {
+        name: 'Javascript',
+        path: '/javascript.png'
+    },
+    {
         name: 'Typescript',
         path: '/typescript.png'
+    },
+    {
+        name: 'MySQL',
+        path: '/mysql.png'
+    },
+    {
+        name: 'HTML',
+        path: '/html.png'
+    },
+    {
+        name: 'CSS',
+        path: '/css.png'
+    },
+    {
+        name: 'Bootstrap',
+        path: '/bootstrap.png'
     }
     
     
@@ -40,11 +52,11 @@ const skills = [
 export const Skills = () => {
   return (
     <>
-        <section id='skills' className="d-flex align-items-center justify-content-center min-vh-100 sect">
+        <section id='stack' className="d-flex align-items-center justify-content-center min-vh-100 sect">
             <div className="w-75">
                 <div className="text-center my-5">
-                    <h1 className="title">SKILLS</h1>
-                    <p>Some of the technologies that i am familiar with</p>
+                    <h1 className="title">STACK</h1>
+                    <p>Some of the technologies that i have been working with</p>
                 </div>
                 <div className="row text-center justify-content-center">
                     {

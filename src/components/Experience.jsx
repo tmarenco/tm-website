@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react"
+import {  useState } from "react"
+import { motion } from 'framer-motion'
 
-const myStack = ['HTML', 'CSS', 'Javascript', 'Typescript', 'NodeJS', 'Bootstrap', 'React', 'Angular'];
+
+const myStack = ['HTML', 'CSS', 'Javascript', 'Typescript', 'Node.js', 'Bootstrap', 'React', 'Angular', 'Next.js'];
 
 const modifyTechnologies = (itemsToDelete, itemsToAdd) => {
   let modifiedArray = [...myStack];
@@ -23,12 +25,12 @@ const jobs = [
     logo: '/genit.png',
     companyName: 'Gen IT',
     timeThere: 'October 2021 - Present Day',
-    description: 'At "Gen IT," I kicked off my software professional journey with a bang. Guided by Scrum practices, I collaborated on apps for prominent clients. Daily client meetings honed my communication finesse and adaptability. This immersive experience ignited my passion for coding, and my commitment to self-improvement drives me forward.',
-    technologies: modifyTechnologies(['React'], ['AdonisJS']),
+    description: 'At Gen IT, I jumped into my software career with excitement, diving into coding tasks for diverse projects. Each day brought new challenges, fueling my passion for coding. While client meetings refined my communication skills, it was the hands-on coding experience that truly sparked my enthusiasm and drove my desire for self-improvement.',
+    technologies: modifyTechnologies([], ['AdonisJS']),
   },
   {
     logo: '/whiteLogoNoSpaces.png',
-    companyName: 'Self',
+    companyName: 'Ongoing Skill Growth',
     timeThere: 'September 2020 - Present Day',
     description: 'Beyond formal roles, I immerse myself in perpetual learning and hands-on practice. Daily online courses and personal website projects are my playground for honing skills. Applying new concepts in real-time cultivates my adaptability and innovative thinking. This self-motivated journey fuels my growth as a developer.',
     technologies: myStack
@@ -50,16 +52,10 @@ export const Experience = () => {
   };
 
   const [activeJob, setActiveJob] = useState(getJob('Gen IT'));
-  const [shouldAnimate, setShouldAnimate] = useState(true);
 
   const onSelectJob = (selectedJob) => {
-    setShouldAnimate(false);
     setActiveJob(getJob(selectedJob))
   };
-
-  useEffect(() => {
-    setShouldAnimate(true);
-  }, [activeJob]);
 
 
   return (
@@ -86,9 +82,15 @@ export const Experience = () => {
                     }
                   </ul>
               </div>
-              <div className={`col-12 col-md-9 ${shouldAnimate ? 'animate__animated animate__fadeInUp' : ''}`}>
+              <motion.div 
+                className="col-12 col-md-9"
+                key={activeJob.companyName}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <div>
-                  <div className="row">
+                  <div className="row experience-head align-items-center">
                     <div className="col-6 align-self-center">
                       <h1>{ activeJob.companyName }</h1>
                     </div>
@@ -106,17 +108,17 @@ export const Experience = () => {
                   <p>{ activeJob.timeThere }</p>
                   <p>{ activeJob.description }</p>
                   <h3>Technologies:</h3>
-                  <ul className="list-group list-group-horizontal mt-4 row">
+                  <ul className="list-group list-group-horizontal mt-4 row pill-items">
                     {
                       activeJob.technologies.map(technology => (
-                        <div key={ technology } className="justify-content-center technology-item ms-3 mt-3">
+                        <div key={ technology } className="justify-content-center technology-item ms-2 mt-3">
                           <li className="list-unstyled">{technology}</li>
                         </div>
                       )) 
                     }
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
