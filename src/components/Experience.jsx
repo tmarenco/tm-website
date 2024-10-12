@@ -25,14 +25,14 @@ const jobs = [
     logo: '/genit.png',
     companyName: 'Gen IT',
     timeThere: 'October 2021 - Present Day',
-    description: 'At Gen IT, I jumped into my software career with excitement, diving into coding tasks for diverse projects. Each day brought new challenges, fueling my passion for coding. While client meetings refined my communication skills, it was the hands-on coding experience that truly sparked my enthusiasm and drove my desire for self-improvement.',
+    description: 'At Gen IT, I started my software career with excitement, diving into coding tasks for diverse projects. I worked with technologies like React, Angular, and Next.js, gaining experience in both frontend and backend development using JavaScript/TypeScript and Node.js. I contributed to projects for industries such as insurance, fitness, and e-commerce, refining my skills in building scalable web applications, optimizing APIs, and creating responsive, user-centric interfaces. This experience solidified my passion for developing efficient and user-friendly applications.',
     technologies: modifyTechnologies([], ['AdonisJS']),
   },
   {
     logo: '/whiteLogoNoSpaces.png',
     companyName: 'Ongoing Skill Growth',
     timeThere: 'September 2020 - Present Day',
-    description: 'Beyond formal roles, I immerse myself in perpetual learning and hands-on practice. Daily online courses and personal website projects are my playground for honing skills. Applying new concepts in real-time cultivates my adaptability and innovative thinking. This self-motivated journey fuels my growth as a developer.',
+    description: 'Beyond formal roles, I immerse myself in hands-on practice and continuous learning. Daily courses and personal projects on my website are key to sharpening my skills. Studying Systems Analysis at ORT University, I focus on applying new concepts in real-time, including design patterns and clean code principles. This approach enhances my adaptability and drives innovative thinking, fueling my growth as a developer.',
     technologies: myStack
   },
   {
